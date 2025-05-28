@@ -5,9 +5,7 @@ obj = bpy.context.active_object
 
 if obj and obj.type == 'GREASEPENCIL':
     gp = obj.data
-
-    # Replace with your layer name or loop through all layers
-    layer = gp.layers.get("Layer") # use correct layer name here
+    layer = gp.layers.get("Layer")
 
     if layer:
         stroke_count = 0
