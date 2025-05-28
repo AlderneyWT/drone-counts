@@ -17,7 +17,7 @@ if obj and obj.type == 'GREASEPENCIL':
             if drawing is not None:
                 stroke_count += len(drawing.strokes)
 
-        print(f"Total strokes in layer '{layer.name}': {stroke_count}")
+        print(f"Total strokes in layer '{gp.name}': {stroke_count}")
     else:
         print("Layer not found.")
 else:
